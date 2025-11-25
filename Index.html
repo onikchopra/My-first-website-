@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onik.dev | Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Background Elements -->
+    <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">onik<span>.dev</span></div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Onik Chopra</span></h1>
+                <div class="typing-text">
+                    I'm a <span id="typing"></span>
+                </div>
+                <p>Full Stack Developer & Freelancer with a passion for creating innovative web solutions. I build responsive, user-friendly applications using modern technologies.</p>
+                <div>
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline contact-btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Full Stack Developer Based in India</h3>
+                    <p>I'm Onik Chopra, a passionate full stack developer with expertise in both front-end and back-end technologies. I specialize in creating dynamic, responsive web applications that provide exceptional user experiences.</p>
+                    <p>With a strong foundation in modern web technologies, I enjoy turning complex problems into simple, beautiful designs. My goal is to build applications that are not only visually appealing but also highly functional and scalable.</p>
+                    <div class="skills">
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">React</div>
+                        <div class="skill">Node.js</div>
+                        <div class="skill">Python</div>
+                        <div class="skill">MongoDB</div>
+                        <div class="skill">Express</div>
+                        <div class="skill">HTML/CSS</div>
+                        <div class="skill">Git</div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400x500/6c63ff/ffffff?text=Onik+Chopra" alt="Onik Chopra">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stat-box">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>50+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-smile"></i>
+                    <h3>40+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-code"></i>
+                    <h3>100k+</h3>
+                    <p>Lines of Code</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-award"></i>
+                    <h3>5+</h3>
+                    <p>Awards Won</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="ai">AI Projects</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web" data-project="ecommerce">
+                    <div class="project-img">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-featured e-commerce solution with payment integration, user authentication, and admin dashboard.</p>
+                        <div class="project-tags">
+                            <div class="project-tag">React</div>
+                            <div class="project-tag">Node.js</div>
+                            <div class="project-tag">MongoDB</div>
+                        </div>
+                        <a href="#" class="project-link view-project" data-project="ecommerce">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="mobile" data-project="fitness">
+                    <div class="project-img">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Fitness Tracker App</h3>
+                        <p>A mobile application for tracking workouts, nutrition, and progress with personalized recommendations.</p>
+                        <div class="project-tags">
+                            <div class="project-tag">React Native</div>
+                            <div class="project-tag">Firebase</div>
+                            <div class="project-tag">Redux</div>
+                        </div>
+                        <a href="#" class="project-link view-project" data-project="fitness">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ai" data-project="ai-content">
+                    <div class="project-img">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Content Generator</h3>
+                        <p>An AI-powered tool that generates high-quality content for blogs, social media, and marketing materials.</p>
+                        <div class="project-tags">
+                            <div class="project-tag">Python</div>
+                            <div class="project-tag">TensorFlow</div>
+                            <div class="project-tag">Flask</div>
+                        </div>
+                        <a href="#" class="project-link view-project" data-project="ai-content">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+91 7404824638</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>chopraparveen1980@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <p>+91 7404824638</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Assistant Button -->
+    <div class="ai-button" id="aiButton">
+        <i class="fas fa-robot"></i>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeContactModal">&times;</span>
+            <h2>Contact Me</h2>
+            <form id="quickContactForm">
+                <div class="form-group">
+                    <label for="quickName">Your Name</label>
+                    <input type="text" id="quickName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="quickEmail">Your Email</label>
+                    <input type="email" id="quickEmail" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="quickMessage">Your Message</label>
+                    <textarea id="quickMessage" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- AI Assistant Modal -->
+    <div class="modal" id="aiModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2>AI Assistant</h2>
+            <p>Hello! I'm your AI assistant. How can I help you today?</p>
+            <div class="form-group">
+                <label for="aiQuery">Your Question</label>
+                <textarea id="aiQuery" class="form-control" placeholder="Ask me anything about Onik's services, skills, or projects..."></textarea>
+            </div>
+            <button class="btn" id="sendQuery">Send</button>
+        </div>
+    </div>
+
+    <!-- Project Detail Pages -->
+    <div id="projectPages" style="display: none;">
+        <!-- E-commerce Project Page -->
+        <section class="project-detail" id="ecommerce-page">
+            <div class="container">
+                <a href="#projects" class="back-button"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+                <div class="project-header">
+                    <h1>E-Commerce Platform</h1>
+                    <div class="project-meta">
+                        <span>Web Application</span>
+                        <span>2023</span>
+                        <span>React, Node.js, MongoDB</span>
+                    </div>
+                </div>
+                <div class="project-gallery">
+                    <div class="gallery-item" style="background-color: #6c63ff;">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="gallery-item" style="background-color: #4a44c6;">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <div class="gallery-item" style="background-color: #3a36a3;">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <h2>Project Overview</h2>
+                    <p>This is a full-featured e-commerce platform built with modern technologies. It includes user authentication, product catalog, shopping cart, payment integration, and an admin dashboard for managing products and orders.</p>
+                    <p>The platform is designed to be scalable and can handle high traffic volumes. It features a responsive design that works seamlessly on all devices.</p>
+                </div>
+                <div class="project-features">
+                    <h2>Key Features</h2>
+                    <ul class="features-list">
+                        <li>User registration and authentication</li>
+                        <li>Product catalog with search and filtering</li>
+                        <li>Shopping cart and wishlist functionality</li>
+                        <li>Secure payment integration with Stripe</li>
+                        <li>Order tracking and history</li>
+                        <li>Admin dashboard for product and order management</li>
+                        <li>Responsive design for all devices</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fitness Tracker Project Page -->
+        <section class="project-detail" id="fitness-page">
+            <div class="container">
+                <a href="#projects" class="back-button"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+                <div class="project-header">
+                    <h1>Fitness Tracker App</h1>
+                    <div class="project-meta">
+                        <span>Mobile Application</span>
+                        <span>2023</span>
+                        <span>React Native, Firebase, Redux</span>
+                    </div>
+                </div>
+                <div class="project-gallery">
+                    <div class="gallery-item" style="background-color: #ff6b6b;">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <div class="gallery-item" style="background-color: #ff8e8e;">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="gallery-item" style="background-color: #ff5252;">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <h2>Project Overview</h2>
+                    <p>A comprehensive fitness tracking application that helps users monitor their workouts, nutrition, and overall progress. The app provides personalized recommendations based on user goals and activity levels.</p>
+                    <p>With a clean and intuitive interface, users can easily log their workouts, track their nutrition, and visualize their progress over time.</p>
+                </div>
+                <div class="project-features">
+                    <h2>Key Features</h2>
+                    <ul class="features-list">
+                        <li>Workout logging with exercise library</li>
+                        <li>Nutrition tracking with food database</li>
+                        <li>Progress tracking with charts and graphs</li>
+                        <li>Personalized workout and nutrition plans</li>
+                        <li>Social features to connect with friends</li>
+                        <li>Integration with wearable devices</li>
+                        <li>Offline functionality</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Content Generator Project Page -->
+        <section class="project-detail" id="ai-content-page">
+            <div class="container">
+                <a href="#projects" class="back-button"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+                <div class="project-header">
+                    <h1>AI Content Generator</h1>
+                    <div class="project-meta">
+                        <span>AI Application</span>
+                        <span>2023</span>
+                        <span>Python, TensorFlow, Flask</span>
+                    </div>
+                </div>
+                <div class="project-gallery">
+                    <div class="gallery-item" style="background-color: #4cd964;">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="gallery-item" style="background-color: #34c759;">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <div class="gallery-item" style="background-color: #30b753;">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <h2>Project Overview</h2>
+                    <p>An advanced AI-powered content generation tool that helps users create high-quality content for various purposes. The application uses state-of-the-art natural language processing models to generate text that is coherent, engaging, and tailored to specific requirements.</p>
+                    <p>The tool can generate blog posts, social media content, product descriptions, and more, saving users time and effort while maintaining quality.</p>
+                </div>
+                <div class="project-features">
+                    <h2>Key Features</h2>
+                    <ul class="features-list">
+                        <li>Multiple content types (blogs, social media, product descriptions)</li>
+                        <li>Customizable tone and style</li>
+                  <li>SEO optimization suggestions</li>
+                        <li>Content plagiarism checking</li>
+                        <li>Batch content generation</li>
+                        <li>API for integration with other applications</li>
+                        <li>User-friendly dashboard</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">onik<span>.dev</span></div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Onik Chopra. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+  </html>
